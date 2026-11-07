@@ -1,6 +1,6 @@
-@'
+
 User-agent: *
 Allow: /
 
 Sitemap: https://schooltextlink.onrender.com/sitemap.xml
-'@ | Set-Content .\public\robots.txt -Encoding utf8
+

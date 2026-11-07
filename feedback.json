@@ -1,12 +1,27 @@
 {
-  "totalResponses": 0,
+  "totalResponses": 1,
   "ratingCounts": {
     "1": 0,
     "2": 0,
     "3": 0,
     "4": 0,
-    "5": 0
+    "5": 1
   },
-  "submissions": [],
-  "lastUpdated": null
+  "submissions": [
+    {
+      "id": "09689bff-3162-429b-908c-0d4c8a5c960d",
+      "rating": 5,
+      "nameOpinion": "It is a good name",
+      "nameMeaning": "Yes, definitely",
+      "firstImpression": "Simple and clear",
+      "purpose": "I understand most of it",
+      "usefulness": "Somewhat useful",
+      "designOpinion": "Very attractive",
+      "favoriteFeature": "Student-to-parent messaging",
+      "improvements": "qewret",
+      "comments": "5y",
+      "submittedAt": "2026-11-07T08:20:17.345Z"
+    }
+  ],
+  "lastUpdated": "2026-11-07T08:20:17.345Z"
 }

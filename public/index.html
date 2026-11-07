@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en-RW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary SEO -->
+    <title>School SMS Messaging in Rwanda | SchoolText Link</title>
+    <meta name="description" content="Explore SchoolText Link, an early-stage school SMS messaging demonstration for Rwanda. See how students could communicate with parents from a school computer and share feedback. Live SMS delivery is not yet available.">
+<meta name="author" content="SchoolText Link project">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="theme-color" content="#059669">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://schooltextlink.com/">
+
+    <!-- Open Graph SEO -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="School SMS Messaging in Rwanda | SchoolText Link">
+    <meta property="og:description" content="Explore an early-stage school SMS messaging demonstration for Rwanda and share feedback. Live SMS delivery is not yet available.">
+    <meta property="og:url" content="https://schooltextlink.com/">
+    <meta property="og:image" content="https://schooltextlink.com/og-image.jpg">
+    <meta property="og:site_name" content="SchoolText Link">
+    <meta property="og:locale" content="en_RW">
+
+    <!-- Twitter SEO -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="School SMS Messaging in Rwanda | SchoolText Link">
+    <meta name="twitter:description" content="Explore an early-stage school SMS messaging demonstration for Rwanda. Live SMS delivery is not yet available.">
+    <meta name="twitter:image" content="https://schooltextlink.com/og-image.jpg">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Structured Data: describes the current landing page accurately -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://schooltextlink.com/#website",
+          "url": "https://schooltextlink.com/",
+          "name": "SchoolText Link",
+          "inLanguage": "en-RW"
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://schooltextlink.com/#webpage",
+          "url": "https://schooltextlink.com/",
+          "name": "School SMS Messaging in Rwanda | SchoolText Link",
+          "description": "An early-stage web-based school SMS messaging demonstration exploring communication between students and parents in Rwanda.",
+          "inLanguage": "en-RW",
+          "isPartOf": {
+            "@id": "https://schooltextlink.com/#website"
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- FAQ content remains visible on the page; no FAQ rich-result promise is made -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-bg {
+            background:
+                radial-gradient(circle at 10% 20%, #d1fae5 0, transparent 35%),
+                radial-gradient(circle at 90% 30%, #a7f3d0 0, transparent 30%),
+                #f8fafc;
+        }
+
+        .glass {
+            background: rgba(255,255,255,.85);
+            backdrop-filter: blur(14px);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(25px);
+            transition: opacity .7s ease, transform .7s ease;
+        }
+
+        .reveal.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .3s ease;
+        }
+
+        .faq-answer.open {
+            max-height: 200px;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+<!-- NAVIGATION -->
+<header class="sticky top-0 z-50 glass border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-5 h-20 flex items-center justify-between">
+
+        <a href="#" class="text-2xl font-black tracking-tight text-emerald-600">
+            SchoolText <span class="text-slate-800">Link.</span>
+        </a>
+
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="#features" class="hover:text-emerald-600 font-medium">Features</a>
+            <a href="#how-it-works" class="hover:text-emerald-600 font-medium">How It Works</a>
+            <a href="#demo" class="hover:text-emerald-600 font-medium">Try Demo</a>
+            <a href="#faq" class="hover:text-emerald-600 font-medium">FAQ</a>
+            <a href="#feedback" class="bg-emerald-600 text-white px-5 py-3 rounded-xl hover:bg-emerald-700 transition">
+                Give Feedback
+            </a>
+        </nav>
+
+        <button id="menuBtn"
+            class="md:hidden text-2xl p-2"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
+            ☰
+        </button>
+    </div>
+
+    <!-- MOBILE MENU -->
+    <nav id="mobileMenu" class="hidden md:hidden bg-white border-t p-5 space-y-4">
+        <a href="#features" class="block">Features</a>
+        <a href="#how-it-works" class="block">How It Works</a>
+        <a href="#demo" class="block">Try Demo</a>
+        <a href="#faq" class="block">FAQ</a>
+        <a href="#feedback" class="block text-emerald-600 font-bold">Give Feedback</a>
+    </nav>
+</header>
+
+<main>
+
+<!-- HERO SECTION -->
+<section class="hero-bg py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-5 grid lg:grid-cols-2 gap-14 items-center">
+
+        <div class="reveal">
+            <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-bold mb-7">
+                ✨ Smarter School Communication
+            </span>
+
+            <h1 class="text-4xl md:text-6xl font-black leading-tight text-slate-900">
+                Connect Students
+                <span class="text-emerald-600"> With Parents</span>
+                Through SMS.
+            </h1>
+
+            <p class="mt-7 text-lg text-slate-600 leading-relaxed">
+                SchoolText Link is an early-stage web-based school SMS
+                messaging demonstration for Rwanda. It explores how students
+                could communicate with parents from a school computer without
+                requiring a personal student SIM card. Try the message preview
+                and share feedback as the idea develops. This demo does not send
+                real SMS messages.
+            </p>
+
+            <div class="flex flex-wrap gap-4 mt-9">
+                <a href="#demo"
+                    class="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-xl font-bold shadow-lg transition">
+                    Try Message Demo →
+                </a>
+
+                <a href="#how-it-works"
+                    class="bg-white border border-slate-200 px-8 py-4 rounded-xl font-bold hover:bg-slate-100 transition">
+                    Learn More
+                </a>
+            </div>
+
+            <div class="flex gap-8 mt-10 text-sm text-slate-500">
+                <div>
+                    <strong class="block text-2xl text-emerald-600">Web</strong>
+                    Browser access
+                </div>
+                <div>
+                    <strong class="block text-2xl text-emerald-600">SMS</strong>
+                    Standard messaging
+                </div>
+                <div>
+                    <strong class="block text-2xl text-emerald-600">Easy</strong>
+                    Simple interface
+                </div>
+            </div>
+        </div>
+
+        <!-- HERO MESSAGE CARD -->
+        <div class="reveal">
+            <div class="bg-white rounded-3xl shadow-2xl border border-slate-100 p-7 max-w-lg mx-auto">
+
+                <div class="flex justify-between items-center mb-8">
+                    <div class="flex items-center gap-3">
+                        <div class="w-12 h-12 rounded-full bg-emerald-100 flex items-center justify-center text-2xl">
+                            💬
+                        </div>
+                        <div>
+                            <h3 class="font-bold">SchoolText Messages</h3>
+                            <p class="text-xs text-slate-500">Communication preview</p>
+                        </div>
+                    </div>
+                    <span class="text-emerald-600 text-sm font-bold">● Demo</span>
+                </div>
+
+                <div class="bg-emerald-50 p-5 rounded-2xl">
+                    <p class="text-xs text-slate-500 mb-2">MESSAGE PREVIEW</p>
+                    <p class="font-medium leading-relaxed">
+                        Hello Parent! This is a sample notification
+                        from SchoolText Link. Stay connected with
+                        your child's school activities.
+                    </p>
+                </div>
+
+                <div class="mt-6 flex justify-between text-sm">
+                    <span class="text-slate-500">Message status</span>
+                    <span class="font-bold text-emerald-600">Ready for demo</span>
+                </div>
+
+                <div class="h-2 bg-slate-100 rounded-full mt-3 overflow-hidden">
+                    <div class="bg-emerald-500 h-full w-full rounded-full"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-5">
+
+        <div class="text-center max-w-2xl mx-auto mb-16 reveal">
+            <span class="text-emerald-600 font-bold uppercase tracking-wider text-sm">
+                Our Features
+            </span>
+
+            <h2 class="text-4xl font-black mt-3">
+                School SMS Messaging Features
+            </h2>
+
+            <p class="text-slate-500 mt-5">
+                Explore a school SMS messaging concept designed to help
+                students and parents stay connected through simple digital
+                communication. SchoolText Link is currently presented as a demo.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+
+            <article class="reveal p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition">
+                <div class="text-4xl mb-6">💻</div>
+                <h3 class="text-xl font-bold mb-3">Web-Based Access</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Students can access the platform through
+                    a computer or supported web browser.
+                </p>
+            </article>
+
+            <article class="reveal p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition">
+                <div class="text-4xl mb-6">📱</div>
+                <h3 class="text-xl font-bold mb-3">Basic Phone Support</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    Parents can receive standard SMS messages
+                    on compatible basic mobile phones.
+                </p>
+            </article>
+
+            <article class="reveal p-8 bg-slate-50 rounded-3xl border border-slate-100 hover:shadow-xl transition">
+                <div class="text-4xl mb-6">🔐</div>
+                <h3 class="text-xl font-bold mb-3">Secure Communication</h3>
+                <p class="text-slate-600 leading-relaxed">
+                    A properly configured backend can protect
+                    student accounts and control authorized messaging.
+                </p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how-it-works" class="py-24 bg-slate-50">
+    <div class="max-w-6xl mx-auto px-5">
+
+        <div class="text-center mb-16 reveal">
+            <span class="text-emerald-600 font-bold">SYSTEM ARCHITECTURE</span>
+            <h2 class="text-4xl font-black mt-3">
+                How SchoolText Link Works
+            </h2>
+            <p class="text-slate-500 mt-4">
+                A simple connection between students and their parents.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <article class="reveal bg-white p-8 rounded-3xl shadow-sm">
+                <div class="text-emerald-600 font-black text-3xl mb-4">01</div>
+                <h3 class="text-xl font-bold">Student Web Dashboard</h3>
+                <p class="text-slate-600 mt-3">
+                    The student logs into the platform, chooses an
+                    authorized parent contact and writes a message.
+                </p>
+            </article>
+
+            <article class="reveal bg-white p-8 rounded-3xl shadow-sm">
+                <div class="text-emerald-600 font-black text-3xl mb-4">02</div>
+                <h3 class="text-xl font-bold">Node.js Backend</h3>
+                <p class="text-slate-600 mt-3">
+                    The server validates the student, recipient and
+                    message before processing the request.
+                </p>
+            </article>
+
+            <article class="reveal bg-white p-8 rounded-3xl shadow-sm">
+                <div class="text-emerald-600 font-black text-3xl mb-4">03</div>
+                <h3 class="text-xl font-bold">TextBee SMS Gateway</h3>
+                <p class="text-slate-600 mt-3">
+                    The backend communicates with a configured
+                    SMS gateway such as TextBee to process the message.
+                </p>
+            </article>
+
+            <article class="reveal bg-white p-8 rounded-3xl shadow-sm">
+                <div class="text-emerald-600 font-black text-3xl mb-4">04</div>
+                <h3 class="text-xl font-bold">Parent Receives SMS</h3>
+                <p class="text-slate-600 mt-3">
+                    The SMS travels through the mobile network
+                    to the parent's phone.
+                </p>
+            </article>
+
+        </div>
+
+        <div class="mt-12 bg-emerald-900 text-white rounded-3xl p-8 text-center reveal">
+            <h3 class="text-2xl font-bold">Student → Server → SMS Gateway → Parent</h3>
+            <p class="text-emerald-100 mt-3">
+                A connected communication system.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- INTERACTIVE SMS DEMO -->
+<section id="demo" class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-5">
+
+        <div class="text-center mb-12 reveal">
+            <span class="text-emerald-600 font-bold">INTERACTIVE EXPERIENCE</span>
+            <h2 class="text-4xl font-black mt-3">Try the SMS Demo</h2>
+            <p class="text-slate-500 mt-4">
+                Write a sample message and see how it will appear.
+                This demo does not send a real SMS.
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+            <!-- MESSAGE FORM -->
+            <form id="smsForm" class="bg-slate-50 border p-7 rounded-3xl space-y-5">
+
+                <div>
+                    <label for="recipient" class="font-semibold block mb-2">
+                        Parent Phone Number
+                    </label>
+                    <input
+                        id="recipient"
+                        type="tel"
+                        placeholder="+250 7XX XXX XXX"
+                        maxlength="20"
+                        required
+                        class="w-full p-4 rounded-xl border focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                </div>
+
+                <div>
+                    <label for="message" class="font-semibold block mb-2">
+                        Your Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        maxlength="500"
+                        placeholder="Write your message to your parent..."
+                        required
+                        class="w-full p-4 rounded-xl border resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+
+                    <div class="text-right text-xs text-slate-500 mt-2">
+                        <span id="charCount">0</span>/500 characters
+                    </div>
+                </div>
+
+                <button
+                    type="submit"
+                    class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold p-4 rounded-xl transition">
+                    Preview Message →
+                </button>
+
+                <p id="demoStatus" role="status" aria-live="polite" class="text-sm text-center"></p>
+
+            </form>
+
+            <!-- LIVE PREVIEW -->
+            <div class="bg-slate-900 text-white p-7 rounded-3xl">
+
+                <div class="flex justify-between items-center mb-8">
+                    <h3 class="font-bold text-lg">Message Preview</h3>
+                    <span class="text-emerald-400 text-xs">● LIVE DEMO</span>
+                </div>
+
+                <div class="bg-slate-800 rounded-2xl p-5 min-h-48">
+                    <p class="text-xs text-slate-400 mb-4">SCHOOLTEXT LINK</p>
+
+                    <p id="previewMessage" class="leading-relaxed break-words">
+                        Your message will appear here...
+                    </p>
+                </div>
+
+                <div class="mt-6 space-y-3 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Recipient</span>
+                        <span id="previewRecipient">Not entered</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Characters</span>
+                        <span id="previewCount">0</span>
+                    </div>
+
+                    <div class="flex justify-between">
+                        <span class="text-slate-400">Delivery</span>
+                        <span class="text-yellow-400">Preview only</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-24 bg-slate-50">
+    <div class="max-w-3xl mx-auto px-5">
+
+        <div class="text-center mb-12 reveal">
+            <span class="text-emerald-600 font-bold">FAQ</span>
+            <h2 class="text-4xl font-black mt-3">
+                Frequently Asked Questions
+            </h2>
+        </div>
+
+        <div class="space-y-4">
+
+            <div class="faq-item bg-white rounded-2xl border p-6">
+                <button class="faq-btn w-full flex justify-between text-left font-bold gap-4"
+                    aria-expanded="false">
+                    Can students use the platform without a SIM card?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-slate-600 pt-4">
+                        Yes. Students can access the website using a
+                        school computer. A configured SMS gateway is
+                        still required to send actual messages.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-2xl border p-6">
+                <button class="faq-btn w-full flex justify-between text-left font-bold gap-4"
+                    aria-expanded="false">
+                    Do parents need internet?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-slate-600 pt-4">
+                        No. Parents can receive standard SMS messages
+                        on compatible mobile phones without internet.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-2xl border p-6">
+                <button class="faq-btn w-full flex justify-between text-left font-bold gap-4"
+                    aria-expanded="false">
+                    Does sending SMS cost money?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-slate-600 pt-4">
+                        SMS delivery may involve mobile carrier charges
+                        and gateway operating costs. Actual costs depend
+                        on the gateway and mobile network.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item bg-white rounded-2xl border p-6">
+                <button class="faq-btn w-full flex justify-between text-left font-bold gap-4"
+                    aria-expanded="false">
+                    Is this demo sending real messages?
+                    <span>+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-slate-600 pt-4">
+                        No. This is an interactive frontend demonstration.
+                        Real SMS delivery requires a backend and an
+                        authorized SMS gateway integration.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- FEEDBACK -->
+<section id="feedback" class="py-24 bg-emerald-900">
+    <div class="max-w-4xl mx-auto px-5">
+
+        <div class="text-center text-white mb-12 reveal">
+            <span class="text-emerald-300 font-bold">YOUR OPINION MATTERS</span>
+            <h2 class="text-4xl font-black mt-3">
+                Help Us Improve
+            </h2>
+            <p class="text-emerald-100 mt-4">
+                Tell us what you think about SchoolText Link.
+                Your honest opinion will help shape the platform.
+            </p>
+        </div>
+
+        <form id="feedbackForm"
+              class="bg-white rounded-3xl p-8 max-w-2xl mx-auto space-y-5">
+
+            <!-- 1. RATING -->
+            <div>
+                <label for="rating" class="font-semibold block mb-2">
+                    1. How would you rate SchoolText Link?
+                </label>
+                <select id="rating" name="rating" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose a rating</option>
+                    <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+                    <option value="4">⭐⭐⭐⭐ Very Good</option>
+                    <option value="3">⭐⭐⭐ Good</option>
+                    <option value="2">⭐⭐ Needs Improvement</option>
+                    <option value="1">⭐ Poor</option>
+                </select>
+            </div>
+
+            <!-- 2. NAME OPINION -->
+            <div>
+                <label for="nameOpinion" class="font-semibold block mb-2">
+                    2. What do you think about the name "SchoolText Link"?
+                </label>
+                <select id="nameOpinion" name="nameOpinion" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose your opinion</option>
+                    <option value="I love the name">I love the name</option>
+                    <option value="It is a good name">It is a good name</option>
+                    <option value="It is okay">It is okay</option>
+                    <option value="It could be better">It could be better</option>
+                    <option value="I do not like the name">I do not like the name</option>
+                </select>
+            </div>
+
+            <!-- 3. NAME SUITABILITY -->
+            <div>
+                <label for="nameMeaning" class="font-semibold block mb-2">
+                    3. Does the name clearly explain what the platform does?
+                </label>
+                <select id="nameMeaning" name="nameMeaning" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose an answer</option>
+                    <option value="Yes, definitely">Yes, definitely</option>
+                    <option value="Somewhat">Somewhat</option>
+                    <option value="Not sure">Not sure</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <!-- 4. FIRST IMPRESSION -->
+            <div>
+                <label for="firstImpression" class="font-semibold block mb-2">
+                    4. What was your first impression of the website?
+                </label>
+                <select id="firstImpression" name="firstImpression" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose your impression</option>
+                    <option value="Very professional">Very professional</option>
+                    <option value="Modern and attractive">Modern and attractive</option>
+                    <option value="Simple and clear">Simple and clear</option>
+                    <option value="Average">Average</option>
+                    <option value="Needs improvement">Needs improvement</option>
+                </select>
+            </div>
+
+            <!-- 5. PURPOSE -->
+            <div>
+                <label for="purpose" class="font-semibold block mb-2">
+                    5. Do you understand the main purpose of SchoolText Link?
+                </label>
+                <select id="purpose" name="purpose" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose an answer</option>
+                    <option value="Yes, clearly">Yes, clearly</option>
+                    <option value="I understand most of it">I understand most of it</option>
+                    <option value="I am a little confused">I am a little confused</option>
+                    <option value="No, I do not understand">No, I do not understand</option>
+                </select>
+            </div>
+
+            <!-- 6. USEFULNESS -->
+            <div>
+                <label for="usefulness" class="font-semibold block mb-2">
+                    6. How useful do you think this platform would be for students and parents?
+                </label>
+                <select id="usefulness" name="usefulness" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose an answer</option>
+                    <option value="Extremely useful">Extremely useful</option>
+                    <option value="Very useful">Very useful</option>
+                    <option value="Somewhat useful">Somewhat useful</option>
+                    <option value="Not very useful">Not very useful</option>
+                    <option value="Not useful at all">Not useful at all</option>
+                </select>
+            </div>
+
+            <!-- 7. DESIGN -->
+            <div>
+                <label for="designOpinion" class="font-semibold block mb-2">
+                    7. What do you think about the website's design?
+                </label>
+                <select id="designOpinion" name="designOpinion" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose your opinion</option>
+                    <option value="Excellent design">Excellent design</option>
+                    <option value="Very attractive">Very attractive</option>
+                    <option value="Simple and clean">Simple and clean</option>
+                    <option value="Average design">Average design</option>
+                    <option value="Needs improvement">Needs improvement</option>
+                </select>
+            </div>
+
+            <!-- 8. FEATURES -->
+            <div>
+                <label for="favoriteFeature" class="font-semibold block mb-2">
+                    8. Which part of SchoolText Link interests you most?
+                </label>
+                <select id="favoriteFeature" name="favoriteFeature" required
+                        class="w-full p-4 border rounded-xl bg-white">
+                    <option value="">Choose a feature</option>
+                    <option value="Student-to-parent messaging">Student-to-parent messaging</option>
+                    <option value="Web-based access">Web-based access</option>
+                    <option value="SMS notifications">SMS notifications</option>
+                    <option value="Simple interface">Simple interface</option>
+                    <option value="The overall idea">The overall idea</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+
+            <!-- 9. IMPROVEMENTS -->
+            <div>
+                <label for="improvements" class="font-semibold block mb-2">
+                    9. What would you change, add, or improve?
+                </label>
+                <textarea id="improvements" name="improvements"
+                          rows="4" maxlength="1000"
+                          placeholder="Tell us honestly what you think should be improved..."
+                          class="w-full p-4 border rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+            </div>
+
+            <!-- 10. ADDITIONAL COMMENTS -->
+            <div>
+                <label for="comments" class="font-semibold block mb-2">
+                    10. What else would you like us to know about SchoolText Link?
+                </label>
+                <textarea id="comments" name="comments"
+                          rows="4" maxlength="1000"
+                          placeholder="Share your ideas, suggestions, concerns or any other opinions..."
+                          class="w-full p-4 border rounded-xl resize-none focus:outline-none focus:ring-2 focus:ring-emerald-500"></textarea>
+            </div>
+
+            <button type="submit"
+                    class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold p-4 rounded-xl">
+                Submit Feedback
+            </button>
+
+            <p id="feedbackStatus"
+               role="status"
+               aria-live="polite"
+               class="text-sm text-center"></p>
+
+            <p class="text-xs text-slate-500 text-center">
+                Your feedback is submitted anonymously. Please do not include personal or sensitive information.
+            </p>
+
+        </form>
+    </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 text-white py-12">
+    <div class="max-w-7xl mx-auto px-5">
+
+        <div class="flex flex-col md:flex-row justify-between gap-8">
+
+            <div>
+                <h2 class="text-2xl font-black text-emerald-400">
+                    SchoolText Link.
+                </h2>
+                <p class="text-slate-400 mt-3 max-w-sm">
+                    Connecting students and parents through
+                    simple digital communication.
+                </p>
+            </div>
+
+            <div>
+                <h3 class="font-bold mb-4">Quick Links</h3>
+                <div class="space-y-3 text-slate-400">
+                    <a href="#features" class="block hover:text-emerald-400">Features</a>
+                    <a href="#how-it-works" class="block hover:text-emerald-400">How It Works</a>
+                    <a href="#demo" class="block hover:text-emerald-400">Try Demo</a>
+                    <a href="#feedback" class="block hover:text-emerald-400">Feedback</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="border-t border-slate-800 mt-10 pt-7 text-center text-sm text-slate-500">
+            © <span id="year"></span> SchoolText Link. All rights reserved.
+        </div>
+
+    </div>
+</footer>
+
+<!-- BACK TO TOP -->
+<button id="topBtn"
+    aria-label="Back to top"
+    class="hidden fixed bottom-7 right-7 bg-emerald-600 hover:bg-emerald-700 text-white w-12 h-12 rounded-full shadow-xl text-xl">
+    ↑
+</button>
+
+<!-- JAVASCRIPT INTERACTIONS -->
+<script>
+
+// MOBILE NAVIGATION
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuBtn.addEventListener('click', () => {
+    const isHidden = mobileMenu.classList.toggle('hidden');
+    menuBtn.setAttribute('aria-expanded', String(!isHidden));
+    menuBtn.textContent = isHidden ? '☰' : '✕';
+});
+
+mobileMenu.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuBtn.textContent = '☰';
+        menuBtn.setAttribute('aria-expanded', 'false');
+    });
+});
+
+// SMS CHARACTER COUNTER
+const message = document.getElementById('message');
+const charCount = document.getElementById('charCount');
+const previewMessage = document.getElementById('previewMessage');
+const previewCount = document.getElementById('previewCount');
+const recipient = document.getElementById('recipient');
+const previewRecipient = document.getElementById('previewRecipient');
+
+message.addEventListener('input', () => {
+    const length = message.value.length;
+
+    charCount.textContent = length;
+    previewCount.textContent = length;
+
+    previewMessage.textContent =
+        message.value || 'Your message will appear here...';
+});
+
+// RECIPIENT PREVIEW
+recipient.addEventListener('input', () => {
+    previewRecipient.textContent =
+        recipient.value || 'Not entered';
+});
+
+// SMS FORM DEMO
+document.getElementById('smsForm').addEventListener('submit', event => {
+    event.preventDefault();
+
+    const status = document.getElementById('demoStatus');
+
+    status.textContent =
+        'Preview created successfully! No real SMS has been sent.';
+
+    status.className =
+        'text-sm text-center text-emerald-700 font-semibold';
+});
+
+// FAQ ACCORDION
+document.querySelectorAll('.faq-btn').forEach(button => {
+
+    button.addEventListener('click', () => {
+
+        const answer = button.nextElementSibling;
+        const isOpen = answer.classList.toggle('open');
+
+        button.setAttribute('aria-expanded', String(isOpen));
+        button.querySelector('span').textContent = isOpen ? '−' : '+';
+
+    });
+
+});
+
+
+const feedbackForm = document.getElementById("feedbackForm");
+
+feedbackForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    const status = document.getElementById("feedbackStatus");
+    const button = feedbackForm.querySelector('button[type="submit"]');
+
+    const fields = [
+        "rating",
+        "nameOpinion",
+        "nameMeaning",
+        "firstImpression",
+        "purpose",
+        "usefulness",
+        "designOpinion",
+        "favoriteFeature",
+        "improvements",
+        "comments"
+    ];
+
+    const feedback = {};
+
+    fields.forEach(field => {
+        feedback[field] = document.getElementById(field).value.trim();
+    });
+
+    button.disabled = true;
+    button.textContent = "Submitting...";
+
+    try {
+        const response = await fetch("/api/feedback", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(feedback)
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+            throw new Error(result.message || "Feedback submission failed.");
+        }
+
+        status.textContent = result.message;
+        status.className = "text-sm text-emerald-700 text-center";
+
+        feedbackForm.reset();
+
+    } catch (error) {
+        status.textContent = error.message;
+        status.className = "text-sm text-red-600 text-center";
+
+    } finally {
+        button.disabled = false;
+        button.textContent = "Submit Feedback";
+    }
+});
+
+// SCROLL REVEAL ANIMATION
+const observer = new IntersectionObserver(entries => {
+
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+        }
+    });
+
+}, { threshold: 0.12 });
+
+document.querySelectorAll('.reveal').forEach(element => {
+    observer.observe(element);
+});
+
+// BACK TO TOP BUTTON
+const topBtn = document.getElementById('topBtn');
+
+window.addEventListener('scroll', () => {
+    topBtn.classList.toggle('hidden', window.scrollY < 400);
+});
+
+topBtn.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// AUTOMATIC COPYRIGHT YEAR
+document.getElementById('year').textContent =
+    new Date().getFullYear();
+
+</script>
+
+</body>
+</html>
